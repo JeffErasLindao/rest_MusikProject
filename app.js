@@ -4,6 +4,8 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
+var cors = require('cors'); //!!important if localhost used
+
 var indexRouter = require('./routes/index');
 var usuarioRouter = require('./routes/rest_usuario');
 var artistaRouter = require('./routes/rest_artista');
@@ -18,6 +20,8 @@ var usuario_listaRouter = require('./routes/rest_usuario_lista');
 
 
 var app = express();
+
+app.use(cors()); //!!important
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
