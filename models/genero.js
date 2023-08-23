@@ -9,7 +9,7 @@ module.exports = function(sequelize, DataTypes) {
     },
     nombre: {
       type: DataTypes.STRING(45),
-      allowNull: true
+      allowNull: false
     }
   }, {
     sequelize,

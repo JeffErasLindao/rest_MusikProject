@@ -1,6 +1,6 @@
 const cancion = require('../models').cancion;
 
-export const getCanciones = function(req, res, next) {  
+const getCanciones = function(req, res, next) {  
     cancion.findAll({  
       attributes: { exclude: ["updatedAt", "createdAt"] } ,
   })  
@@ -10,3 +10,5 @@ export const getCanciones = function(req, res, next) {
   .catch(error => res.status(400).send(error)) 
 
 };
+
+module.exports = getCanciones;

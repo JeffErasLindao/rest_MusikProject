@@ -1,6 +1,6 @@
 const usuario_artista = require('../models').usuario_artista;
 
-export const getUsuarios_Artistas = function(req, res, next) {  
+const getUsuarios_Artistas = function(req, res, next) {  
     usuario_artista.findAll({  
       attributes: { exclude: ["updatedAt", "createdAt"] } ,
   })  
@@ -10,3 +10,5 @@ export const getUsuarios_Artistas = function(req, res, next) {
   .catch(error => res.status(400).send(error)) 
 
 };
+
+module.exports = getUsuarios_Artistas;

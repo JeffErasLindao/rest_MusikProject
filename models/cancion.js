@@ -9,7 +9,7 @@ module.exports = function(sequelize, DataTypes) {
     },
     titulo: {
       type: DataTypes.STRING(45),
-      allowNull: true
+      allowNull: false
     },
     duracion: {
       type: DataTypes.TIME,
@@ -21,7 +21,7 @@ module.exports = function(sequelize, DataTypes) {
     },
     link: {
       type: DataTypes.TEXT,
-      allowNull: true
+      allowNull: false
     },
     Artista_idArtista: {
       type: DataTypes.INTEGER,

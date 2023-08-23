@@ -1,6 +1,6 @@
 const lista = require('../models').listadereproduccion;
 
-export const getListas = function(req, res, next) {  
+const getListas = function(req, res, next) {  
     lista.findAll({  
       attributes: { exclude: ["updatedAt", "createdAt"] } ,
   })  
@@ -10,3 +10,5 @@ export const getListas = function(req, res, next) {
   .catch(error => res.status(400).send(error)) 
 
 };
+
+module.exports = getListas;

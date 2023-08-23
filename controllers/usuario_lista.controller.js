@@ -1,6 +1,6 @@
 const usuario_lista = require('../models').usuario_lista;
 
-export const getUsuarios_Listas = function(req, res, next) {  
+const getUsuarios_Listas = function(req, res, next) {  
     usuario_lista.findAll({  
       attributes: { exclude: ["updatedAt", "createdAt"] } ,
   })  
@@ -10,3 +10,5 @@ export const getUsuarios_Listas = function(req, res, next) {
   .catch(error => res.status(400).send(error)) 
 
 };
+
+module.exports = getUsuarios_Listas;

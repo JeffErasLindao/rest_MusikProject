@@ -1,6 +1,6 @@
 const album = require('../models').album;
 
-export const getAlbumes = function(req, res, next) {  
+const getAlbumes = function(req, res, next) {  
     album.findAll({  
       attributes: { exclude: ["updatedAt", "createdAt"] } ,
   })  
@@ -10,3 +10,5 @@ export const getAlbumes = function(req, res, next) {
   .catch(error => res.status(400).send(error)) 
 
 };
+
+module.exports = getAlbumes;

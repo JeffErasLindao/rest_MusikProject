@@ -1,5 +1,5 @@
 var express = require('express');
-const { getListas } = require('../controllers/listadereproduccion.controller');
+const getListas = require('../controllers/listadereproduccion.controller');
 var router = express.Router();
 
 

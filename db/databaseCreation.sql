@@ -25,10 +25,9 @@ DROP TABLE IF EXISTS `musikdb`.`Usuario` ;
 
 CREATE TABLE IF NOT EXISTS `musikdb`.`Usuario` (
   `idUsuario` INT NOT NULL AUTO_INCREMENT,
-  `nombre` VARCHAR(45) NULL,
-  `correo` VARCHAR(255) NULL,
-  `contrasenia` VARCHAR(45) NULL,
-  `fecha_registro` DATE NULL,
+  `userName` VARCHAR(45) NOT NULL,
+  `correo` VARCHAR(255) NOT NULL,
+  `contrasenia` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`idUsuario`))
 ENGINE = InnoDB;
 
@@ -40,7 +39,7 @@ DROP TABLE IF EXISTS `musikdb`.`Artista` ;
 
 CREATE TABLE IF NOT EXISTS `musikdb`.`Artista` (
   `idArtista` INT NOT NULL AUTO_INCREMENT,
-  `nombre` VARCHAR(45) NULL,
+  `nombre` VARCHAR(45) NOT NULL,
   `pais` VARCHAR(45) NULL,
   `biografia` TEXT NULL,
   PRIMARY KEY (`idArtista`))
@@ -54,7 +53,7 @@ DROP TABLE IF EXISTS `musikdb`.`Genero` ;
 
 CREATE TABLE IF NOT EXISTS `musikdb`.`Genero` (
   `idGenero` INT NOT NULL AUTO_INCREMENT,
-  `nombre` VARCHAR(45) NULL,
+  `nombre` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`idGenero`))
 ENGINE = InnoDB;
 
@@ -66,10 +65,10 @@ DROP TABLE IF EXISTS `musikdb`.`Cancion` ;
 
 CREATE TABLE IF NOT EXISTS `musikdb`.`Cancion` (
   `idCancion` INT NOT NULL AUTO_INCREMENT,
-  `titulo` VARCHAR(45) NULL,
+  `titulo` VARCHAR(45) NOT NULL,
   `duracion` TIME NULL,
   `fecha` DATE NULL,
-  `link` TEXT NULL,
+  `link` TEXT NOT NULL,
   `Artista_idArtista` INT NOT NULL,
   `Genero_idGenero` INT NOT NULL,
   PRIMARY KEY (`idCancion`),
@@ -95,8 +94,8 @@ DROP TABLE IF EXISTS `musikdb`.`Album` ;
 
 CREATE TABLE IF NOT EXISTS `musikdb`.`Album` (
   `idAlbum` INT NOT NULL AUTO_INCREMENT,
-  `titulo` VARCHAR(45) NULL,
-  `anio` YEAR NULL,
+  `titulo` VARCHAR(45) NOT NULL,
+  `anio` YEAR NOT NULL,
   `Artista_idArtista` INT NOT NULL,
   PRIMARY KEY (`idAlbum`),
   INDEX `fk_Album_Artista1_idx` (`Artista_idArtista` ASC) VISIBLE,
@@ -115,8 +114,8 @@ DROP TABLE IF EXISTS `musikdb`.`ListaDeReproduccion` ;
 
 CREATE TABLE IF NOT EXISTS `musikdb`.`ListaDeReproduccion` (
   `idListaDeReproduccion` INT NOT NULL AUTO_INCREMENT,
-  `nombre` VARCHAR(45) NULL,
-  `descripcion` VARCHAR(100) NULL,
+  `nombre` VARCHAR(45) NOT NULL,
+  `descripcion` VARCHAR(255) NULL,
   PRIMARY KEY (`idListaDeReproduccion`))
 ENGINE = InnoDB;
 

@@ -1,6 +1,6 @@
 const genero = require('../models').genero;
 
-export const getGeneros = function(req, res, next) {  
+const getGeneros = function(req, res, next) {  
     genero.findAll({  
       attributes: { exclude: ["updatedAt", "createdAt"] } ,
   })  
@@ -10,3 +10,5 @@ export const getGeneros = function(req, res, next) {
   .catch(error => res.status(400).send(error)) 
 
 };
+
+module.exports = getGeneros;

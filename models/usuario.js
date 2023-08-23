@@ -7,21 +7,17 @@ module.exports = function(sequelize, DataTypes) {
       allowNull: false,
       primaryKey: true
     },
-    nombre: {
+    userName: {
       type: DataTypes.STRING(45),
-      allowNull: true
+      allowNull: false
     },
     correo: {
       type: DataTypes.STRING(255),
-      allowNull: true
+      allowNull: false
     },
     contrasenia: {
       type: DataTypes.STRING(45),
-      allowNull: true
-    },
-    fecha_registro: {
-      type: DataTypes.DATEONLY,
-      allowNull: true
+      allowNull: false
     }
   }, {
     sequelize,

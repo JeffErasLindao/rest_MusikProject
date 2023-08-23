@@ -37,7 +37,7 @@ app.use('/rest/album', albumRouter);
 app.use('/rest/genero', generoRouter);
 app.use('/rest/listadereproduccion', listaRouter);
 app.use('/rest/usuario_artista', usuario_artistaRouter);
-app.use('/rest/usario_lista', usuario_listaRouter);
+app.use('/rest/usuario_lista', usuario_listaRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
