@@ -16,11 +16,16 @@ var listaRouter = require('./routes/rest_listadereproduccion');
 var usuario_artistaRouter = require('./routes/rest_usuario_artista');
 var usuario_listaRouter = require('./routes/rest_usuario_lista');
 
+/* REFERENCIA AL MÓDULO */
+const swaggerUi = require('swagger-ui-express')
 
+/* REFERENCIA AL ARCHIVO GENERADO */
+const swaggerFile = require('./swagger_output.json')
 
 
 var app = express();
 
+app.use('/doc', swaggerUi.serve, swaggerUi.setup(swaggerFile))
 app.use(cors()); //!!important
 
 // view engine setup
