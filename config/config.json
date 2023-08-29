@@ -18,6 +18,7 @@
     "password": "l7YtFLPzxhdP9wKLboU1",
     "database": "railway",
     "host": "containers-us-west-38.railway.app",
-    "dialect": "mysql"
+    "dialect": "mysql",
+    "port": 8009
   }
 }
