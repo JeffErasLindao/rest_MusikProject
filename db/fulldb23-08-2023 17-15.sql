@@ -76,33 +76,30 @@ CREATE TABLE `artista` (
   `pais` varchar(45) DEFAULT NULL,
   `biografia` text DEFAULT NULL,
   PRIMARY KEY (`idArtista`)
-) ENGINE=InnoDB AUTO_INCREMENT=26 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=301 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_general_ci;
 
-INSERT INTO `artista` (`idArtista`, `nombre`, `pais`, `biografia`) VALUES (1, 'Franco Flatley', 'Greece', 'Adipisci vero totam blanditiis rerum dolor consequuntur exercitationem. Maiores autem iste ut ut tempora ut similique. Nam possimus suscipit placeat nihil incidunt.');
-INSERT INTO `artista` (`idArtista`, `nombre`, `pais`, `biografia`) VALUES (2, 'Catalina King', 'Honduras', 'Aut aliquid sunt optio repellat cum tempora reiciendis. Quis ipsam officiis ea nobis et ea. Molestias quae quaerat inventore aut nobis et voluptas. Ut molestias dicta modi natus laudantium vel.');
-INSERT INTO `artista` (`idArtista`, `nombre`, `pais`, `biografia`) VALUES (3, 'Garrett Weimann Sr.', 'Ecuador', 'Beatae rerum natus et velit non laboriosam. Sint saepe ut illum culpa cum laborum odit. Nisi cum omnis rerum.');
-INSERT INTO `artista` (`idArtista`, `nombre`, `pais`, `biografia`) VALUES (4, 'Nina Schmidt', 'Nigeria', 'Animi neque tempore cumque iusto. Sunt recusandae vitae velit sint eligendi et. Et eum eos inventore.');
-INSERT INTO `artista` (`idArtista`, `nombre`, `pais`, `biografia`) VALUES (5, 'Frederick Kunze PhD', 'Equatorial Guinea', 'Ullam quidem illo provident modi quod debitis. Officiis ipsa nemo iusto voluptatibus iusto. Iste facere molestiae consequuntur molestiae.');
-INSERT INTO `artista` (`idArtista`, `nombre`, `pais`, `biografia`) VALUES (6, 'Zoila D\'Amore', 'Equatorial Guinea', 'Laborum et illum odit blanditiis distinctio id officia. Ut repellat dignissimos modi consequuntur qui. Est aspernatur quia eum ducimus fugit dolorem.');
-INSERT INTO `artista` (`idArtista`, `nombre`, `pais`, `biografia`) VALUES (7, 'Cloyd McClure', 'Papua New Guinea', 'Nihil consequatur voluptatum nemo provident perferendis suscipit. Non ipsa mollitia voluptas cupiditate hic veniam. Quos fugit aut culpa placeat.');
-INSERT INTO `artista` (`idArtista`, `nombre`, `pais`, `biografia`) VALUES (8, 'Jalen Krajcik DVM', 'Timor-Leste', 'Et laudantium ullam autem eius deserunt. Et voluptas consequatur corrupti sit architecto accusamus. Consequuntur velit officia animi illum ut eligendi illum tenetur.');
-INSERT INTO `artista` (`idArtista`, `nombre`, `pais`, `biografia`) VALUES (9, 'Miss Cheyanne Veum', 'Nepal', 'Repellat omnis quasi neque aut qui facilis omnis fugiat. Sit praesentium pariatur ullam. Officia voluptatum accusantium officiis quo minima.');
-INSERT INTO `artista` (`idArtista`, `nombre`, `pais`, `biografia`) VALUES (10, 'Sarina Emmerich Sr.', 'Montserrat', 'Totam natus quo omnis est consequuntur dolorem qui. Maxime amet eum unde mollitia.');
-INSERT INTO `artista` (`idArtista`, `nombre`, `pais`, `biografia`) VALUES (11, 'Mrs. Rosanna Wisozk', 'Samoa', 'Eius culpa totam veniam sunt ut. Mollitia voluptas ut voluptates sunt perferendis. Velit porro nobis adipisci ut sit impedit. Unde consectetur provident enim deleniti nulla velit ratione.');
-INSERT INTO `artista` (`idArtista`, `nombre`, `pais`, `biografia`) VALUES (12, 'Prof. Freddy Trantow', 'South Georgia and the South Sandwich Islands', 'Pariatur autem qui cumque natus. Rerum et similique blanditiis impedit necessitatibus omnis voluptas. Qui aut voluptatibus laudantium molestiae eaque alias aut.');
-INSERT INTO `artista` (`idArtista`, `nombre`, `pais`, `biografia`) VALUES (13, 'Yasmeen Heller', 'Peru', 'Ut tempore est eum ab. Molestias vitae et recusandae est distinctio commodi. Non rerum laboriosam itaque quae. Magni rerum deserunt autem.');
-INSERT INTO `artista` (`idArtista`, `nombre`, `pais`, `biografia`) VALUES (14, 'Prof. Jessie Bergnaum', 'Russian Federation', 'Ut sequi tenetur voluptatem vero enim magnam qui ut. Facere quas odio incidunt voluptas aut nisi. Vero sunt explicabo quidem qui. Magni voluptatum rerum earum officiis porro.');
-INSERT INTO `artista` (`idArtista`, `nombre`, `pais`, `biografia`) VALUES (15, 'Jayce Nicolas', 'Iceland', 'Tenetur laudantium unde odit corrupti non. Ex aut quo voluptatum non modi. Itaque dolor repellendus architecto explicabo. Incidunt voluptatum ut dolore dolorum id dolorem.');
-INSERT INTO `artista` (`idArtista`, `nombre`, `pais`, `biografia`) VALUES (16, 'Mrs. Shanna Kub III', 'Latvia', 'Minus dolor aut dolores. Vero non molestiae amet in reprehenderit. In est perspiciatis autem minima voluptas sequi veritatis.');
-INSERT INTO `artista` (`idArtista`, `nombre`, `pais`, `biografia`) VALUES (17, 'Mariane Keebler Jr.', 'Angola', 'Magni voluptatem molestias doloremque provident quo. Dolore cum doloribus minus culpa fuga optio.');
-INSERT INTO `artista` (`idArtista`, `nombre`, `pais`, `biografia`) VALUES (18, 'Prof. Kayden Runte', 'Cambodia', 'Amet quod provident quaerat magni ut. Nam doloribus veniam corporis et tenetur. Soluta qui ut velit doloremque magnam. Sint consequatur natus quibusdam aut minus.');
-INSERT INTO `artista` (`idArtista`, `nombre`, `pais`, `biografia`) VALUES (19, 'Mrs. Kirstin Schuster', 'Reunion', 'Et rerum quia magnam sapiente et. Quos consequuntur eos incidunt qui illum. Iure repellendus aut voluptas fuga repudiandae aliquid quo.');
-INSERT INTO `artista` (`idArtista`, `nombre`, `pais`, `biografia`) VALUES (20, 'Berry Hessel', 'Saint Vincent and the Grenadines', 'Hic fugiat at nemo sint est quia. Adipisci in ut et hic. Ut ut rerum qui totam voluptatem sapiente. Id fuga ea eligendi dolorum totam necessitatibus. Ut amet ullam at dolorem sequi vel rerum.');
-INSERT INTO `artista` (`idArtista`, `nombre`, `pais`, `biografia`) VALUES (21, 'Aniya O\'Connell', 'Antigua and Barbuda', 'Inventore voluptate porro est et. Aperiam corrupti et quod et necessitatibus necessitatibus. Consectetur amet ut ut facilis.');
-INSERT INTO `artista` (`idArtista`, `nombre`, `pais`, `biografia`) VALUES (22, 'Van Nikolaus', 'Tunisia', 'Impedit et minima modi quasi iure numquam repellat. Recusandae cumque eligendi id numquam exercitationem temporibus.');
-INSERT INTO `artista` (`idArtista`, `nombre`, `pais`, `biografia`) VALUES (23, 'Maryam Kihn', 'Burkina Faso', 'Qui nihil non provident velit ea. Aperiam magnam ut aut architecto est odio. Et nam nesciunt est magni.');
-INSERT INTO `artista` (`idArtista`, `nombre`, `pais`, `biografia`) VALUES (24, 'Raleigh Yost II', 'Canada', 'Ullam facilis neque aut et non commodi exercitationem. Et ut perferendis in eveniet ut ut. Cumque dolor quis fuga culpa iste atque dolorem eos.');
-INSERT INTO `artista` (`idArtista`, `nombre`, `pais`, `biografia`) VALUES (25, 'Karolann Senger', 'Latvia', 'Rem possimus consequatur labore et dolorem laborum. Et fugit vel laboriosam alias. Veniam quidem quod sint magnam dicta ullam.');
+INSERT INTO `artista` (`idArtista`, `nombre`, `pais`, `biografia`) VALUES
+(1, 'Taylor Swift', 'Estados Unidos', 'Taylor Swift es una cantante y compositora estadounidense conocida por su música pop y country. Nacida el 13 de diciembre de 1989 en Reading, Pensilvania, Swift comenzó a actuar a una edad temprana y firmó su primer contrato discográfico a los 14 años. Su álbum homónimo debut, lanzado en 2006, la catapultó a la fama con canciones como "Teardrops on My Guitar" y "Our Song". Swift se convirtió en un ícono del pop con álbumes como "1989" y "Red", y ha ganado múltiples premios Grammy y otros reconocimientos por su música. Además de su éxito musical, Swift es conocida por su activismo y su presencia en las redes sociales.');
+
+INSERT INTO `artista` (`idArtista`, `nombre`, `pais`, `biografia`) VALUES
+(2, 'Ed Sheeran', 'Reino Unido', 'Ed Sheeran es un cantante y compositor británico nacido el 17 de febrero de 1991 en Halifax, West Yorkshire, Inglaterra. Comenzó a ganar reconocimiento con sus mezclas de pop, folk y R&B, y su álbum debut, "+", incluyó éxitos como "The A Team" y "Lego House". Sheeran es conocido por su habilidad para contar historias en sus canciones y su destreza con la guitarra. Su álbum "x" lo consolidó como una superestrella internacional con éxitos como "Sing" y "Thinking Out Loud". A lo largo de su carrera, ha vendido millones de álbumes y ha llenado estadios en todo el mundo.');
+
+INSERT INTO `artista` (`idArtista`, `nombre`, `pais`, `biografia`) VALUES
+(3, 'Ariana Grande', 'Estados Unidos', 'Ariana Grande es una talentosa cantante, actriz y compositora estadounidense nacida el 26 de junio de 1993 en Boca Ratón, Florida. Comenzó su carrera como actriz en programas de televisión como "Victorious" de Nickelodeon, pero pronto se centró en la música. Su voz poderosa y su estilo pop y R&B la llevaron al estrellato con álbumes como "Yours Truly" y "My Everything". Grande es conocida por su rango vocal impresionante y su capacidad para interpretar diferentes estilos musicales. Ha obtenido múltiples premios y reconocimientos a lo largo de su carrera.');
+
+INSERT INTO `artista` (`idArtista`, `nombre`, `pais`, `biografia`) VALUES
+(4, 'Bruno Mars', 'Estados Unidos', 'Bruno Mars, cuyo nombre real es Peter Gene Hernández, es un artista nacido el 8 de octubre de 1985 en Honolulu, Hawái. Mars es conocido por su versatilidad musical y su talento como cantante, compositor y productor. Sus influencias musicales abarcan desde el pop y el R&B hasta el funk y el soul. Saltó a la fama con su álbum debut "Doo-Wops & Hooligans", que incluyó éxitos como "Just the Way You Are" y "Grenade". Mars ha continuado cosechando éxitos con canciones como "Uptown Funk" y "24K Magic", ganando múltiples premios Grammy a lo largo de su carrera.');
+
+INSERT INTO `artista` (`idArtista`, `nombre`, `pais`, `biografia`) VALUES
+(5, 'Billie Eilish', 'Estados Unidos', 'Billie Eilish Pirate Baird O\'Connell, conocida como Billie Eilish, nació el 18 de diciembre de 2001 en Los Ángeles, California. Eilish se convirtió en una sensación musical a una edad temprana, publicando canciones en línea con su hermano Finneas. Su estilo único y su música introspectiva la llevaron a la fama con canciones como "Ocean Eyes". En 2019, su álbum debut "When We All Fall Asleep, Where Do We Go?" la consolidó como una de las artistas más influyentes de su generación. Eilish es conocida por abordar temas emocionales y sociales en sus canciones y videos.');
+
+INSERT INTO `artista` (`idArtista`, `nombre`, `pais`, `biografia`) VALUES
+ ('Justin Timberlake', 'Estados Unidos', 'Justin Timberlake es un cantante, compositor y actor estadounidense nacido el 31 de enero de 1981 en Memphis, Tennessee. Inicialmente ganó fama como miembro de la boy band *NSYNC y luego emprendió una exitosa carrera en solitario. Timberlake es conocido por su versatilidad musical y su influencia en la música pop contemporánea.'),
+  ('Katy Perry', 'Estados Unidos', 'Katy Perry es una cantante y compositora estadounidense nacida el 25 de octubre de 1984 en Santa Bárbara, California. Saltó a la fama con su sencillo "I Kissed a Girl" y desde entonces ha sido una figura influyente en la música pop. Perry es conocida por su estilo colorido y sus producciones teatrales en el escenario.'),
+  ('Rihanna', 'Barbados', 'Rihanna es una cantante, actriz y empresaria originaria de Barbados, nacida el 20 de febrero de 1988 en Saint Michael. Comenzó su carrera musical en la adolescencia y ha logrado un éxito masivo con canciones como "Umbrella", "Diamonds" y "Work". Además de su carrera musical, Rihanna ha incursionado en la moda y la belleza.'),
+  ('Adele', 'Reino Unido', 'Adele es una cantante y compositora británica nacida el 5 de mayo de 1988 en Tottenham, Londres. Su poderosa voz y sus baladas emotivas la han convertido en una de las artistas más exitosas de su generación. Ha ganado múltiples premios Grammy y es conocida por éxitos como "Someone Like You" y "Hello".'),
+  ('Maroon 5', 'Estados Unidos', 'Maroon 5 es una banda de pop rock estadounidense formada por Adam Levine y sus compañeros. La banda se formó en Los Ángeles, California, y se hizo famosa con su álbum debut "Songs About Jane". Han lanzado numerosos éxitos desde entonces, fusionando el pop, el rock y el R&B en su música.');
+
 
 
 #
@@ -334,33 +331,40 @@ CREATE TABLE `genero` (
   `idGenero` int(11) NOT NULL AUTO_INCREMENT,
   `nombre` varchar(45) NOT NULL,
   PRIMARY KEY (`idGenero`)
-) ENGINE=InnoDB AUTO_INCREMENT=26 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=31 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_general_ci;
 
-INSERT INTO `genero` (`idGenero`, `nombre`) VALUES (1, 'dolor');
-INSERT INTO `genero` (`idGenero`, `nombre`) VALUES (2, 'quis');
-INSERT INTO `genero` (`idGenero`, `nombre`) VALUES (3, 'ut');
-INSERT INTO `genero` (`idGenero`, `nombre`) VALUES (4, 'velit');
-INSERT INTO `genero` (`idGenero`, `nombre`) VALUES (5, 'aut');
-INSERT INTO `genero` (`idGenero`, `nombre`) VALUES (6, 'minima');
-INSERT INTO `genero` (`idGenero`, `nombre`) VALUES (7, 'reiciendis');
-INSERT INTO `genero` (`idGenero`, `nombre`) VALUES (8, 'enim');
-INSERT INTO `genero` (`idGenero`, `nombre`) VALUES (9, 'quae');
-INSERT INTO `genero` (`idGenero`, `nombre`) VALUES (10, 'vitae');
-INSERT INTO `genero` (`idGenero`, `nombre`) VALUES (11, 'deserunt');
-INSERT INTO `genero` (`idGenero`, `nombre`) VALUES (12, 'voluptas');
-INSERT INTO `genero` (`idGenero`, `nombre`) VALUES (13, 'possimus');
-INSERT INTO `genero` (`idGenero`, `nombre`) VALUES (14, 'et');
-INSERT INTO `genero` (`idGenero`, `nombre`) VALUES (15, 'nemo');
-INSERT INTO `genero` (`idGenero`, `nombre`) VALUES (16, 'cupiditate');
-INSERT INTO `genero` (`idGenero`, `nombre`) VALUES (17, 'vitae');
-INSERT INTO `genero` (`idGenero`, `nombre`) VALUES (18, 'eos');
-INSERT INTO `genero` (`idGenero`, `nombre`) VALUES (19, 'consequatur');
-INSERT INTO `genero` (`idGenero`, `nombre`) VALUES (20, 'deserunt');
-INSERT INTO `genero` (`idGenero`, `nombre`) VALUES (21, 'aut');
-INSERT INTO `genero` (`idGenero`, `nombre`) VALUES (22, 'laborum');
-INSERT INTO `genero` (`idGenero`, `nombre`) VALUES (23, 'magnam');
-INSERT INTO `genero` (`idGenero`, `nombre`) VALUES (24, 'et');
-INSERT INTO `genero` (`idGenero`, `nombre`) VALUES (25, 'sapiente');
+INSERT INTO `genero` (`idGenero`, `nombre`) VALUES
+(1, 'Pop'),
+(2, 'Rock'),
+(3, 'Hip-hop'),
+(4, 'Electrónica'),
+(5, 'R&B'),
+(6, 'Reguetón'),
+(7, 'Country'),
+(8, 'Jazz'),
+(9, 'Salsa'),
+(10, 'Blues'),
+(11, 'Clásica'),
+(12, 'Folk'),
+(13, 'Indie'),
+(14, 'Soul'),
+(15, 'Funk'),
+(16, 'Punk'),
+(17, 'Metal'),
+(18, 'Trap'),
+(19, 'Dance'),
+(20, 'Gospel'),
+(21, 'Disco'),
+(22, 'J-Pop'),
+(23, 'K-Pop'),
+(24, 'Rap'),
+(25, 'Ska'),
+(26, 'Rock progresivo'),
+(27, 'Country pop'),
+(28, 'Merengue'),
+(29, 'Hardcore'),
+(30, 'Música clásica contemporánea');
+
 
 
 #

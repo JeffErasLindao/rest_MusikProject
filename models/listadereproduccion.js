@@ -13,7 +13,7 @@ module.exports = function(sequelize, DataTypes) {
     },
     descripcion: {
       type: DataTypes.STRING(255),
-      allowNull: true
+      allowNull: false
     }
   }, {
     sequelize,

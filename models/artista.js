@@ -13,11 +13,15 @@ module.exports = function(sequelize, DataTypes) {
     },
     pais: {
       type: DataTypes.STRING(45),
-      allowNull: true
+      allowNull: false
+    },
+    fundacion: {
+      type: DataTypes.INTEGER,
+      allowNull: false
     },
     biografia: {
       type: DataTypes.TEXT,
-      allowNull: true
+      allowNull: false
     }
   }, {
     sequelize,

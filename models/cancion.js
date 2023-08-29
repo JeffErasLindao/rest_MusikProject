@@ -13,14 +13,10 @@ module.exports = function(sequelize, DataTypes) {
     },
     duracion: {
       type: DataTypes.TIME,
-      allowNull: true
+      allowNull: false
     },
-    fecha: {
+    lanzamiento: {
       type: DataTypes.DATEONLY,
-      allowNull: true
-    },
-    link: {
-      type: DataTypes.TEXT,
       allowNull: false
     },
     Artista_idArtista: {
@@ -31,12 +27,20 @@ module.exports = function(sequelize, DataTypes) {
         key: 'idArtista'
       }
     },
-    Genero_idGenero: {
+    Album_idAlbum: {
       type: DataTypes.INTEGER,
-      allowNull: false,
+      allowNull: true,
       references: {
-        model: 'genero',
-        key: 'idGenero'
+        model: 'album',
+        key: 'idAlbum'
+      }
+    },
+    lyric_idlyric: {
+      type: DataTypes.INTEGER,
+      allowNull: true,
+      references: {
+        model: 'lyric',
+        key: 'idlyric'
       }
     }
   }, {
@@ -60,10 +64,17 @@ module.exports = function(sequelize, DataTypes) {
         ]
       },
       {
-        name: "fk_Cancion_Genero1_idx",
+        name: "fk_Cancion_Album1_idx",
         using: "BTREE",
         fields: [
-          { name: "Genero_idGenero" },
+          { name: "Album_idAlbum" },
+        ]
+      },
+      {
+        name: "fk_Cancion_lyric1_idx",
+        using: "BTREE",
+        fields: [
+          { name: "lyric_idlyric" },
         ]
       },
     ]

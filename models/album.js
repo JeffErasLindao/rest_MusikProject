@@ -12,7 +12,11 @@ module.exports = function(sequelize, DataTypes) {
       allowNull: false
     },
     anio: {
-      type: DataTypes.DATE,
+      type: DataTypes.DATEONLY,
+      allowNull: false
+    },
+    descripcion: {
+      type: DataTypes.TEXT,
       allowNull: false
     },
     Artista_idArtista: {
