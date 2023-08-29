@@ -1,0 +1,14 @@
+'use strict';
+
+/** @type {import('sequelize-cli').Migration} */
+module.exports = {
+  async up (queryInterface, Sequelize) {
+
+    await queryInterface.bulkInsert('lyric', [{"idlyric":1,"lyric":"모든 게 궁금해 hows your day\nOh tell me (oh yeah oh yeah, ah yeh ah yeh)\n뭐가 널 행복하게 하는지\nOh text me (oh yeah oh yeah, oh yeah oh yeah)\nYour every picture\n내 머리맡에 두고 싶어 oh bae\nCome be my teacher\n네 모든 걸 다 가르쳐줘\nYour one, your two\nListen my my baby 나는\n저 하늘을 높이 날고 있어\n(그때 네가 내게 줬던 두 날개로)\n이제 여긴 너무 높아\n난 내 눈에 널 맞추고 싶어\nYeah, you makin me a boy with love\nOh my my my, oh my my my\nIve waited all my life\n네 전부를 함께하고 싶어\nOh my my my, oh my my my\nLooking for something right\n이제 조금은 나 알겠어\nthan a moment, than a moment, love\n(Ooh ah ooh ah ooh ah ooh ah ah) I have waited longer\n(Ooh ah ooh ah ooh ah ooh ah ooh)\nFor a boy with, for a boy with love\n널 알게 된 이후 ya 내 삶은 온통 너 ya\n사소한 게 사소하지 않게 만들어버린 너라는 별\n(Oh yeah) 하나부터 열까지 ay ay 모든 게 특별하지 ay\n너의 관심사 걸음걸이 말투와\n사소한 작은 습관들까지 (Hope world)\nAyy 다 말하지 너무 작던 내가 영웅이 된 거라고 (oh nah)\n난 말하지 운명 따윈 처음부터 내 게 아니었다고 (oh nah)\n세계의 평화 (no way)\n거대한 질서 (no way)\n그저 널 지킬 거야 난 (boy with love)\nListen my my baby 나는\n저 하늘을 높이 날고 있어\n(그때 네가 내게 줬던 두 날개로)\n이제 여긴 너무 높아\n난 내 눈에 널 맞추고 싶어\nYeah, you makin me a boy with love\nOh my my my, oh my my my\nYou got me high so fast\n네 전부를 함께하고 싶어\nOh my my my, oh my my my\nYou got me fly so fast\n이제 조금은 나 알겠어\nthan a boy with love\n(Ooh ah ooh ah ooh ah ooh ah ah) love is nothing stronger\n(Ooh ah ooh ah ooh ah ooh ah ooh) (than a boy with) than a boy with love\n툭 까놓고 말할게\n나도 모르게 힘이 들어가기도 했어\n높아버린 sky, 커져버린 hall\n때론 도망치게 해달라며 기도했어\nBut 너의 상처는 나의 상처\n깨달았을 때 나 다짐했던걸 (yeah)\n네가 준 이카루스의 날개로\n태양이 아닌 너에게로\nLet me fly\nOh my my my, oh my my my\nIve waited all my life\n네 전부를 함께하고 싶어\nOh my my my, oh my my my\nLooking for something right\n이제 조금은 나 알겠어\nthan a moment, than a moment, love\n(Ooh ah ooh ah ooh ah ooh ah ah) love is nothing stronger\n(Ooh ah ooh ah ooh ah ooh ah ooh) (than a boy with) than a boy with love"},{"idlyric":2,"lyric":"\nWere gonna celebrate\nCelebrate and dance so free\nOne more time\nMusics got me feeling so free\nWere gonna celebrate\nCelebrate and dance so free\nOne more time\nMusics got me feeling so free\nWere gonna celebrate\nOne more time\nMusics got me feeling so free\nWere gonna celebrate\nCelebrate and dance so free\nOne more time\nMusics got me feeling so free\nWere gonna celebrate\nCelebrate and dance so free\nOne more time\nMusics got me feeling so free\nWe are gonna celebrate\nCelebrate and dance so free\nOne more time\nMusic has got me feeling so free\nWe are gonna celebrate\nCelebrate and dance so free"}], {});
+  },
+
+  async down (queryInterface, Sequelize) {
+    
+    await queryInterface.bulkDelete('lyric', null, {});
+  }
+};
