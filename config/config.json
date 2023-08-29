@@ -15,10 +15,10 @@
   },
   "production": {
     "username": "root",
-    "password": "QkNEsYWdu8qUqc5CfNzR",
+    "password": "kPiI8KzPlM7tlzl2c3t1",
     "database": "railway",
-    "host": "containers-us-west-104.railway.app",
+    "host": "containers-us-west-187.railway.app",
     "dialect": "mysql",
-    "port": "7428"
+    "port": "8030"
   }
 }
