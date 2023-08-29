@@ -1,8 +1,8 @@
 {
   "development": {
     "username": "root",
-    "password": "1234",
-    "database": "musikdb",
+    "password": null,
+    "database": "database_development",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
@@ -15,9 +15,9 @@
   },
   "production": {
     "username": "root",
-    "password": "l7YtFLPzxhdP9wKLboU1",
-    "database": "railway",
-    "host": "containers-us-west-38.railway.app",
+    "password": null,
+    "database": "database_production",
+    "host": "127.0.0.1",
     "dialect": "mysql"
   }
 }
