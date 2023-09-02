@@ -1,8 +1,9 @@
 var express = require('express');
 var router = express.Router();
-const getArtistas = require('../controllers/artista.controller');
+const artistaController = require('../controllers/artista.controller');
 
 
-router.get('/findAll/json', getArtistas);
+router.get('/findAll/json', artistaController.getArtistas);
+router.get('/findSongsNumberByArtist/json', artistaController.getSongsNumberByArtist);
 
 module.exports = router;
