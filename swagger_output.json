@@ -24,6 +24,144 @@
         }
       }
     },
+    "/usuario/findById/{idUsuario}/json": {
+      "get": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "idUsuario",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Bad Request"
+          }
+        }
+      }
+    },
+    "/usuario/save": {
+      "post": {
+        "description": "Crea un nuevo usuario.",
+        "parameters": [
+          {
+            "name": "userData",
+            "in": "body",
+            "description": "Datos del usuario a crear.",
+            "required": true,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "idUsuario": {
+                  "type": "integer",
+                  "format": "int32"
+                },
+                "userName": {
+                  "type": "string"
+                },
+                "correo": {
+                  "type": "string"
+                },
+                "contrasenia": {
+                  "type": "string"
+                }
+              },
+              "required": ["userName", "correo", "contrasena"]
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Usuario creado exitosamente.",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "message": {
+                  "type": "string"
+                },
+                "usuario": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Solicitud incorrecta. Verifique los datos enviados."
+          }
+        }
+      }
+    },
+    "/usuario/update/{idUsuario}": {
+      "put": {
+        "description": "Actualiza un usuario existente.",
+        "parameters": [
+          {
+            "name": "idUsuario",
+            "in": "path",
+            "description": "ID del usuario a actualizar.",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "userData",
+            "in": "body",
+            "description": "Datos actualizados del usuario.",
+            "required": true,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "userName": {
+                  "type": "string"
+                },
+                "correo": {
+                  "type": "string"
+                },
+                "contrasena": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Usuario actualizado exitosamente."
+          },
+          "400": {
+            "description": "Solicitud incorrecta. Verifique los datos enviados."
+          }
+        }
+      }
+    },
+    "/usuario/delete/{idUsuario}": {
+      "delete": {
+        "description": "Elimina un usuario existente.",
+        "parameters": [
+          {
+            "name": "idUsuario",
+            "in": "path",
+            "description": "ID del usuario a eliminar.",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Usuario eliminado exitosamente."
+          },
+          "400": {
+            "description": "Solicitud incorrecta. Verifique el ID del usuario."
+          }
+        }
+      }
+    },
     "/artista/findAll/json": {
       "get": {
         "description": "",
